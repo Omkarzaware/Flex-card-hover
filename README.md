@@ -9,6 +9,9 @@ Here are some of the pictures:-
 ## Hover state
 ![Screenshot (12)](https://github.com/Omkarzaware/Flex-card-hover/assets/129882875/4510dde2-8390-429d-ae70-004a44cec37d)
 
+![Screenshot (13)](https://github.com/Omkarzaware/Flex-card-hover/assets/129882875/99de9688-d3a5-45ef-9ff9-728c60af67f4)
+
+
 
 
 
