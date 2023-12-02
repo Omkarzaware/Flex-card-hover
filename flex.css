@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  "Raleway";
+}
+.flex-container{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container{
+        flex-direction: column;
+    } 
+}
+
+.flex-title {
+    color: white;
+    position: relative;
+    font-size: 7vw;
+    margin: auto;
+    text-align: center;
+    transform: rotate(90deg);
+    top: 15%;
+    -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+@media screen and (max-width:768px) {
+    .flex-title{
+        transform: rotate(0deg) !important;
+    }
+}
+
+.flex-about{
+    opacity: 0;
+  color: #f1f1f1;
+  position: relative;
+  width: 80%;
+  font-size: 2vw;
+  padding: 5%;
+  top: 20%;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  line-height: 1.3;
+  margin: auto;
+  text-align: left;
+  transform: rotate(0deg);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  }
+@media screen and (max-width:768px) {  
+ .flex-about {
+    padding:0%;
+    border: 0px solid #f1f1f1;
+}    
+}
+
+.flex-slide{
+    cursor: pointer;
+    flex: 1;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+@media screen and (max-width:768px) {
+    .flex-slide{
+        overflow: auto;
+        overflow-x: hidden;
+    }
+}
+
+@media screen and(max-width:768px) {
+    .flex-slide p {
+        font-size: 2em;
+    }
+}
+@media screen and(max-width:768px) {
+    .flex-slide ul li {
+        font-size: 2em;
+    }
+}
+
+.flex-slide:hover{
+    flex-grow: 3;
+}
+
+.home{
+    height: 100vh;
+    background: linear-gradient(rgba(134, 56, 56, 0.5), rgba(0, 0, 0, 0.5)),url(https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg);
+    background-size: cover;
+    background-position: center ;
+   
+
+}
+
+@media screen and (min-width:768px) {
+.home{
+    animation: aboutFlexslide 3s 1;
+    animation-delay: 0s;
+}
+}
+@keyframes aboutFlexSlide {
+    0% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+    50% {
+      -webkit-flex-grow: 3;
+      flex-grow: 3;
+    }
+    100% {
+      -webkit-flex-grow: 1;
+      flex-grow: 1;
+    }
+  }
+@media screen  and (min-width:768px){
+    .flex-title-home{
+        transform: rotate(90deg);
+        top: 15%;
+        animation: aboutFlexslide 3s 1;
+        animation-delay: 0s;
+    }
+}
+@keyframes homeFlextitle {
+    0%{
+        transform: rotate(90deg);
+        top: 15%;
+    }
+    50%{
+        transform: rotate(0deg);
+        top: 15%;
+    }
+    100%{
+        transform: rotate(90deg);
+        top: 15%;
+    }
+}
+.flex-about-home{
+    opacity: 0;
+}
+@media screen and (min-width:768px){
+    .flex-about-home{
+        animation: aboutFlexSlide 3s 1;
+        animation-delay: 0s;
+    }
+}
+
+@keyframes flexAboutHome {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.about{
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)) ,url(https://cdn.pixabay.com/photo/2017/10/04/16/39/lake-2816802_1280.jpg);
+    background-size :cover;
+    background-position: center;
+}
+.work{
+    background: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(https://cdn.pixabay.com/photo/2018/02/04/09/09/brushes-3129361_640.jpg);
+    background-size:cover;
+    background-position:center;   
+}
+.contact{
+    background: linear-gradient(rgb(0,0,0,0.5) ,rgb(0,0,0,0.5))  ,url(https://cdn.pixabay.com/photo/2013/11/28/10/03/river-219972_640.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.contact-form{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+text{       
+    width:100%;
+}

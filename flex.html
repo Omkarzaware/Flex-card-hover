@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Hover</title>
+    <link rel="stylesheet" href="flex.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-slide  home">
+            <div class="flex-title flex-title-home">Home</div>
+            <div class="flex-about flex-about-home"><p> Home section of the website</p></div>
+        </div>
+        <div class="flex-slide work">
+            <div class="flex-title "> Work</div>
+            <div class="flex-about"> <p>Listing types of work available</p>
+            <ul>
+                <li> First Work</li>
+                <li>Second Work</li>
+                <li>Third Work</li>
+                <li>Fourth Work</li>
+                <li>Fifth Work</li>
+            </ul></div>
+        </div>
+        <div class="flex-slide about">
+            <div class="flex-title">About</div>
+            <div class="flex-about"><p> About section of the website</p></div>
+        </div>
+        <div class="flex-slide contact">
+            <div class="flex-title">Contact</div>
+            <div class="flex-about">
+                <p>Contact form below</p>
+                <form class="contact-form">
+                    <p>Email <input type="email" name="email" ></p>
+                    <p>Comments <input type="text" name="text" ></p>
+                    <p>Submit <input type="submit" name="submit" value="Send messages" ></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/769286/jquery.waitforimages.min.js'></script>
+    <script  src="flex.js"></script>
+    
+</body>
+</html>
